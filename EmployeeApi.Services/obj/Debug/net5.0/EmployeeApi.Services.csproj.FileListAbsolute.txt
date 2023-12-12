@@ -1,0 +1,17 @@
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.csproj.AssemblyReference.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.AssemblyInfoInputs.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.AssemblyInfo.cs
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.csproj.CoreCompileInputs.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.Services.deps.json
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.Services.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\ref\EmployeeApi.Services.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.Services.pdb
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.DataAccess.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.Models.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.DataAccess.pdb
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\bin\Debug\net5.0\EmployeeApi.Models.pdb
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.csproj.CopyComplete
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\ref\EmployeeApi.Services.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Services\obj\Debug\net5.0\EmployeeApi.Services.pdb

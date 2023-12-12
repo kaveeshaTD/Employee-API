@@ -1,0 +1,12 @@
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\bin\Debug\net5.0\EmployeeApi.Models.deps.json
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\bin\Debug\net5.0\EmployeeApi.Models.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\bin\Debug\net5.0\EmployeeApi.Models.pdb
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.csproj.AssemblyReference.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.AssemblyInfoInputs.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.AssemblyInfo.cs
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.csproj.CoreCompileInputs.cache
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\ref\EmployeeApi.Models.dll
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\obj\Debug\net5.0\EmployeeApi.Models.pdb
+D:\ASP. net Web api new proj\Employee Api\EmployeeApi.Models\bin\Debug\net5.0\ref\EmployeeApi.Models.dll
