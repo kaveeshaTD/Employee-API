@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EmployeeApi.Models;
 using EmployeeApi.Services.Employee;
 using EmployeeApi.Services.Models;
 using Microsoft.AspNetCore.Http;
@@ -16,18 +17,41 @@ namespace EmployeeApi.Controllers
     {
         private readonly IEmpployeeRepository _EmployeeServices;
         private readonly IMapper _mapper;
-        public EmployeesController(IEmpployeeRepository repository , IMapper mapper)
+        public EmployeesController(IEmpployeeRepository repository, IMapper mapper)
         {
             _EmployeeServices = repository;
             _mapper = mapper;
         }
 
-       [HttpGet]
-       public ActionResult<ICollection<EmployeeDto>> getEmployees()
+        [HttpGet]
+        public ActionResult<ICollection<EmployeeDto>> getEmployees()
         {
             var employees = _EmployeeServices.allEmployees();
             var mapedEmployees = _mapper.Map<ICollection<EmployeeDto>>(employees);
             return Ok(mapedEmployees);
+        }
+
+        //get select emp
+        [HttpGet("{Id}", Name = "GetEmployee")]
+        public IActionResult getEmployee(int id)
+        {
+            var Employee = _EmployeeServices.getEmployee(id);
+            if(Employee is null)
+            {
+                return NotFound();
+            }
+            var mappedEmployee = _mapper.Map<EmployeeDto>(Employee);
+            return Ok(mappedEmployee);
+        }
+
+        [HttpPost]
+        public ActionResult<EmployeeDto> CreateEmployee(CreateEmployeeDto employee)
+        {
+            var employeeEntity = _mapper.Map<Employees>(employee);
+            var newEmployee = _EmployeeServices.AddEmployee(employeeEntity);
+            var employeeForReturn = _mapper.Map<EmployeeDto>(newEmployee);
+
+            return CreatedAtRoute("GetEmployee" , new {id=employeeForReturn.Id},employeeForReturn);
         }
          
     }
