@@ -14,5 +14,8 @@ namespace EmployeeApi.Services.Employee
 
         //get employee by id
         public Employees getEmployee(int id);
+
+        //create Employee
+        public Employees AddEmployee(Employees employee);
     }
 }

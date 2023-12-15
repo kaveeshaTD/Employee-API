@@ -14,6 +14,7 @@ namespace EmployeeApi.Services.Profiles
         public EmployeeProfile() //class name and this name should be same
         {
             CreateMap<Employees, EmployeeDto>();
+            CreateMap<CreateEmployeeDto, Employees>();
         }
     }
 }

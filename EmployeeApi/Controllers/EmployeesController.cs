@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EmployeeApi.Models;
 using EmployeeApi.Services.Employee;
 using EmployeeApi.Services.Models;
 using Microsoft.AspNetCore.Http;
@@ -41,6 +42,16 @@ namespace EmployeeApi.Controllers
             }
             var mappedEmployee = _mapper.Map<EmployeeDto>(Employee);
             return Ok(mappedEmployee);
+        }
+
+        [HttpPost]
+        public ActionResult<EmployeeDto> CreateEmployee(CreateEmployeeDto employee)
+        {
+            var employeeEntity = _mapper.Map<Employees>(employee);
+            var newEmployee = _EmployeeServices.AddEmployee(employeeEntity);
+            var employeeForReturn = _mapper.Map<EmployeeDto>(newEmployee);
+
+            return CreatedAtRoute("GetEmployee" , new {id=employeeForReturn.Id},employeeForReturn);
         }
          
     }

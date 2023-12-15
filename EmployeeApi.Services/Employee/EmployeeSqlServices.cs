@@ -20,5 +20,13 @@ namespace EmployeeApi.Services.Employee
         {
             return _context.Employees.Find(id); //in this line employees mean employee table
         }
+
+        //create employee
+        public Employees AddEmployee(Employees employee)
+        {
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
+            return _context.Employees.Find(employee.Id);
+        }
     }
 }
