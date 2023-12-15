@@ -15,5 +15,10 @@ namespace EmployeeApi.Services.Employee
         {
             return _context.Employees.ToList();
         }
+
+        public Employees getEmployee(int id)
+        {
+            return _context.Employees.Find(id); //in this line employees mean employee table
+        }
     }
 }

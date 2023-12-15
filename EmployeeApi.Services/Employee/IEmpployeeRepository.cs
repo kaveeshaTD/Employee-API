@@ -9,6 +9,10 @@ namespace EmployeeApi.Services.Employee
 {
     public interface IEmpployeeRepository
     {
+        //get all employee
         public List<Employees> allEmployees();
+
+        //get employee by id
+        public Employees getEmployee(int id);
     }
 }
