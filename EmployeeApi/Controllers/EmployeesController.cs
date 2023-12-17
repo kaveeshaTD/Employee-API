@@ -54,5 +54,30 @@ namespace EmployeeApi.Controllers
             return CreatedAtRoute("GetEmployee" , new {id=employeeForReturn.Id},employeeForReturn);
         }
          
+        [HttpPut("{EmployeeID}")]
+        public ActionResult UpdateEmployee(int employeeID , UpdateEmployeeDto employee)
+        {
+            var updatingEmployee = _EmployeeServices.getEmployee(employeeID);
+            if(updatingEmployee is null)
+            {
+                return NotFound();
+            }
+            _mapper.Map(employee, updatingEmployee);
+            _EmployeeServices.UpdateEmployee(updatingEmployee);
+            return NoContent();
+        }
+
+        [HttpDelete("{EmployeeID}")]
+        public ActionResult DeleteEmployee(int employeeID)
+        {
+            var deletingEmployee = _EmployeeServices.getEmployee(employeeID);
+           if(deletingEmployee is null)
+            {
+                return NotFound();
+            }
+            _EmployeeServices.DeleteEmployee(deletingEmployee);
+            return NoContent();
+
+        }
     }
 }

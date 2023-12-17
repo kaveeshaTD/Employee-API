@@ -28,5 +28,19 @@ namespace EmployeeApi.Services.Employee
             _context.SaveChanges();
             return _context.Employees.Find(employee.Id);
         }
+
+        //update employee
+        public void UpdateEmployee(Employees employees)
+        {
+            _context.SaveChanges();
+        }
+
+        //delete Employee
+        public void DeleteEmployee(Employees employees)
+        {
+            _context.Remove(employees);
+            _context.SaveChanges();
+
+        }
     }
 }
