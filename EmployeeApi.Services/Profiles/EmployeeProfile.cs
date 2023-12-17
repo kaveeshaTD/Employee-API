@@ -15,6 +15,7 @@ namespace EmployeeApi.Services.Profiles
         {
             CreateMap<Employees, EmployeeDto>();
             CreateMap<CreateEmployeeDto, Employees>();
+            CreateMap<UpdateEmployeeDto, Employees>();//Employees table name
         }
     }
 }
